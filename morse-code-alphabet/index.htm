@@ -1,0 +1,740 @@
+﻿<!DOCTYPE html>
+<html data-theme="dark" dir="ltr" lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morsekodealfabetet</title>
+    <meta name="description" content="Oppdag det internasjonale morsekodealfabetet. Finn hver bokstav og tall, og hør hvordan de høres ut.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Morsekodealfabetet">
+    <meta name="twitter:description" content="Oppdag det internasjonale morsekodealfabetet. Finn hver bokstav og tall, og hør hvordan de høres ut.">
+    <meta name="twitter:url" content="https://morsecodetranslator.com/morse-code-alphabet/">
+    <meta name="twitter:image" content="https://morsecodetranslator.com/assets/icons/android-chrome-512x512.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="no-NO">
+    <meta property="og:url" content="https://morsecodetranslator.com/morse-code-alphabet/">
+    <meta property="og:title" content="Morsekodealfabetet">
+    <meta property="og:description" content="Oppdag det internasjonale morsekodealfabetet. Finn hver bokstav og tall, og hør hvordan de høres ut.">
+    <meta property="og:image" content="https://morsecodetranslator.com/assets/icons/android-chrome-512x512.png">
+    <link rel="icon" href="../assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/icons/site.webmanifest">
+    <link rel="stylesheet" href="../assets/css/main.css?id=2f21e916404eb9d36d42f7497016d37d">
+    <link rel="canonical" href="index.htm">
+  </head>
+  <body data-locale="no-NO" class="bg-base-100" tabindex="-1">
+    <div class="drawer">
+      <input aria-label="Toggle menu" id="drawer" type="checkbox" class="drawer-toggle">
+      <div class="drawer-content">
+        <nav class="navbar w-full border-b border-base-content/10">
+          <div class="navbar-start">
+            <label aria-label="Open menu" for="drawer" class="btn btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-5 w-5 stroke-current stroke-15 fill-none">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+              <span class="hidden md:block text-xs">MENY</span>
+            </label>
+            <div class="dropdown z-40 hidden sm:inline-block">
+              <label tabindex="0" class="btn btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-4 w-4 md:h-5 md:w-5 stroke-15 stroke-current fill-none">
+                  <path d="m5 8 6 6"></path>
+                  <path d="m4 14 6-6 2-3"></path>
+                  <path d="M2 5h12"></path>
+                  <path d="M7 2h1"></path>
+                  <path d="m22 22-5-10-5 10"></path>
+                  <path d="M14 18h6"></path>
+                </svg>
+                <span class="hidden md:block text-xs">NO</span>
+              </label>
+              <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 flex-nowrap rounded-box w-48 max-h-72 overflow-y-scroll">
+                <li>
+                  <a class="" href="">
+                    <span class="badge badge-sm badge-outline font-mono font-semibold tracking-wide opacity-80">EN</span>
+                    <span class="text-xs">Coming Soon</span>
+                  </a>
+                </li>
+                <!--
+                <li><a class="" href="da/index.htm"><span class="badge badge-sm badge-outline font-mono font-semibold tracking-wide opacity-80">DA</span><span class="text-xs">Dansk</span></a></li><li><a class="" href="de/index.htm"><span class="badge badge-sm badge-outline font-mono font-semibold tracking-wide opacity-80">DE</span><span class="text-xs">Deutsch</span></a></li><li><a class="active" href="index.htm"><span class="badge badge-sm badge-outline font-mono font-semibold tracking-wide opacity-80">EN</span><span class="text-xs">English</span></a></li><a class="" href="fi/index.htm"><span class="badge badge-sm badge-outline font-mono font-semibold tracking-wide opacity-80">FI</span><span class="text-xs">Suomi</span></a></li>
+                -->
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center">
+            <h1 class="font-bold normal-case text-lg sm:text-3xl max-w-[66vw] sm:max-w-full truncate">Morse-kodealfabet</h1>
+          </div>
+          <div class="navbar-end">
+            <label title="Settings" id="settings-open" class="btn btn-ghost modal-button">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current stroke-15 fill-none" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span class="hidden md:block text-xs">INNSTILLINGER</span>
+            </label>
+          </div>
+        </nav>
+        <main class="w-full flex" id="main">
+          <div class="w-full max-w-3xl mx-auto p-5">
+            <div class="overflow-x-auto">
+              <div class="tabs tabs-bordered lg:tabs-lg flex-nowrap whitespace-nowrap">
+                <a href="#international" class="tab tab-active flex-grow">Internasjonalt</a>
+                <a href="#american" class="tab flex-grow">Amerikansk</a>
+              </div>
+            </div>
+            <div class="mt-6" id="tab-container">
+              <div class="" id="international">
+                <div id="international-alphabet" class="overflow-x-auto">
+                  <table class="table table-sm table-zebra border border-collapse border-base-content/10 w-full">
+                    <thead>
+                      <tr>
+                        <th class="bg-transparent rounded-none border border-base-content/10 text-center">Karakter</th>
+                        <th class="bg-transparent rounded-none border border-base-content/10 text-center">Morsekode</th>
+                        <th class="bg-transparent rounded-none border border-base-content/10 text-center">
+                          <a class="link link-info link-hover" href="../kommer-snart.htm">NATO Uttale</a>
+                        </th>
+                        <th class="bg-transparent rounded-none border border-base-content/10 text-center">Lyd</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">A</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Alpha</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">B</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-...</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Bravo</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-di-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">C</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-.-.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Charlie</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-dah-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">D</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Delta</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">E</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Echo</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">F</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">..-.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Foxtrot</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-dah-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">G</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">--.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Golf</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">H</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">....</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Hotel</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">I</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">India</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">J</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.---</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Juliett</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah-dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">K</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-.-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Kilo</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">L</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.-..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Lima</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">M</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">--</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Mike</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">N</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">November</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">O</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">---</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Oscar</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">P</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.--.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Papa</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah-dah-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Q</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">--.-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Quebec</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-di-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">R</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.-.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Romeo</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">S</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">...</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Sierra</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">T</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Tango</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">U</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">..-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Uniform</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">V</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">...-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Victor</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">W</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.--</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Whiskey</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">X</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-..-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">X-ray</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-di-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Y</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-.--</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Yankee</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Z</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">--..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Zulu</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">0</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-----</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Zero</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-dah-dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">1</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.----</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">One</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah-dah-dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">2</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">..---</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Two</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-dah-dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">3</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">...--</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Three</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">4</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">....-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Four</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-di-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">5</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.....</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Five</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">6</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-....</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Six</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-di-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">7</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">--...</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Seven</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-di-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">8</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">---..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Eight</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-dah-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">9</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">----.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Nine</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-dah-dah-dit</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button class="btn btn-sm btn-block btn-outline mt-6 show-more-rows">+ Vis Mer</button>
+                </div>
+              </div>
+              <div class="hidden" id="american">
+                <div id="international-alphabet" class="overflow-x-auto">
+                  <table class="table table-sm table-zebra border border-collapse border-base-content/10 w-full">
+                    <thead>
+                      <tr>
+                        <th class="bg-transparent rounded-none border border-base-content/10 text-center">Karakter</th>
+                        <th class="bg-transparent rounded-none border border-base-content/10 text-center">Morsekode</th>
+                        <th class="bg-transparent rounded-none border border-base-content/10 text-center">
+                          <a class="link link-info link-hover" href="../kommer-snart.htm">NATO Uttale</a>
+                        </th>
+                        <th class="bg-transparent rounded-none border border-base-content/10 text-center">Lyd</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">A</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Alpha</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">B</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-...</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Bravo</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-di-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">C</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.. .</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Charlie</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dit dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">D</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Delta</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">E</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Echo</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">F</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.-.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Foxtrot</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">G</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">--.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Golf</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">H</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">....</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Hotel</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">I</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">India</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dit</td>
+                      </tr>
+                      <tr class="">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">J</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-.-.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Juliett</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-dah-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">K</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-.-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Kilo</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">L</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">⸺</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Lima</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center"></td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">M</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">--</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Mike</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">N</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">November</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">O</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">. .</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Oscar</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dit dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">P</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.....</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Papa</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Q</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">..-.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Quebec</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-dah-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">R</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">. ..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Romeo</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dit di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">S</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">...</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Sierra</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">T</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Tango</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">U</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">..-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Uniform</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">V</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">...-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Victor</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">W</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.--</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Whiskey</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">X</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.-..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">X-ray</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Y</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.. ..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Yankee</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dit di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Z</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">... .</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Zulu</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-dit dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">0</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">⸻</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Zero</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center"></td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">1</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">.--.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">One</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-dah-dah-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">2</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">..-..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Two</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-dah-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">3</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">...-.</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Three</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-dah-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">4</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">....-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Four</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-di-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">5</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">---</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Five</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-dah</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">6</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">......</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Six</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">di-di-di-di-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">7</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">--..</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Seven</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-dah-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">8</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-....</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Eight</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-di-di-dit</td>
+                      </tr>
+                      <tr class="hidden">
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">9</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">-..-</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">Nine</td>
+                        <td class="bg-transparent rounded-none border border-base-content/10 text-center">dah-di-di-dah</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <button class="btn btn-sm btn-block btn-outline mt-6 show-more-rows">+ Vis Mer</button>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center mt-12" id="content">
+                <article class="prose max-w-full">
+                    <h2>Hva er Dot og Dash-koden?</h2>
+                    <p>Morsekode, som opprinnelig ble brukt på telegraflinjer, bruker prikker og strek, som også kan overføres som blinkende lys eller elektriske pulser, spesielt i amatørradiobånd. Prikkene representerer et kort signal, og strekene representerer et langt signal.</p>
+                    <p>Hver bokstav i alfabetet A-Z, tallene mellom 0 og 9, og tegnsetting (inkludert brøkstreken eller skråstreken "/") har et sett med prikker-strek kombinasjoner assosiert med seg. Dette skaper en kode for hvert nummer og hver bokstav.</p>
+                    <p>Når prikkene og strekene brukes i en sekvens, formidler de en melding. Et bemerkelsesverdig eksempel er " <a href="../words/sos-in-morse-code/index.htm">SOS</a>", det universelle nødtegn, representert som "... --- ...". </p>
+                    <p>I tillegg brukes prosedyrsignaler eller "prosigns" som "K" (som betyr "OVER") for å strømlinjeforme og standardisere kommunikasjonsprosessen.</p>
+                    <h2>Hvorfor er noen tegn i morsekode kortere enn andre?</h2>
+                    <p>Noen bokstaver brukes mer hyppig enn andre og har derfor kortere koder. Dette gjør det raskere å kommunisere de mer vanlige bokstavene og ordene.</p>
+                    <p>De <strong>lengre kodene brukes for bokstaver som brukes mindre hyppig</strong>. Dette er også likt Huffman-koding, en algoritme der kortere koder brukes for vanlige tegn. </p>
+                    <p>For eksempel har de fleste vokalene (A, E, I, O og U) kortere koder fordi de brukes oftere i ord. Mens de fleste konsonanter, spesielt de minst brukte bokstavene, har lengre koder.</p>
+                    <p>Bokstaven "E", som er representert ved en enkelt prikk, er den mest brukte bokstaven på engelsk og har dermed den korteste koden.</p>
+                    <h2>Hvordan viser man et mellomrom i morsekode?</h2>
+                    <p>Det er mellomrom etter hver bokstav og ord i morsekode. Tre prikker representerer et mellomrom mellom en bokstav, og <strong>syv prikker representerer et mellomrom mellom to ord</strong>.</p>
+                    <h2>Er morsekode lett eller vanskelig?</h2>
+                    <p><a href="../learn-morse-code/index.htm">Å lære morsekode</a> er ikke så vanskelig. Det er 26 koder for det engelske alfabetet og 10 koder for tallene 0 til 9. I tillegg finnes det morsekode-tegn for forskjellige tegnsettingstegn, selv om det nøyaktige antallet kan variere avhengig av hvilke tegnsettingstegn som er inkludert.</p>
+                    <p>Å forstå kodene når et morsekode-alfabet er tilgjengelig, er enkelt. Men å huske kodene kan være utfordrende og kan ta tid uten hjelp av en <a href="../index.htm">morsekodeoversetter</a>.</p>
+                    <h2>Bruker USA Internasjonal morsekode?</h2>
+                    <p>Ja, USA bruker <a href="../kommer-snart.htm">Internasjonal morsekode</a>. Opprinnelig hadde USA sin egen versjon av morsekode, kjent som "<a href="../kommer-snart.htm">Amerikansk morsekode</a>". Dette var faktisk den opprinnelige morsekoden. Men i dag brukes den standardiserte Internasjonale morsekoden for konsistens i global kommunikasjon.</p>
+                </article>
+                
+            </div>
+          </div>
+        </main>
+        <footer class="footer bg-base-300 text-base-content border-t border-base-content/30">
+            <div class="w-full max-w-3xl mx-auto p-6">
+              <div class="w-full flex flex-col md:flex-row gap-6 justify-between items-center">
+                <div class="flex flex-col">
+                  <div class="flex flex-row gap-4">
+                    <a href="https://www.youtube.com/@Vervl?sub_confirmation=1" class="hover:text-[#FF0000] transition-colors" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                        <title>YouTube</title>
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                      </svg>
+                    </a>
+                    <a href="https://x.com/" class="hover:text-base-content/80 transition-colors" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                        <title>X</title>
+                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="flex flex-col justify-center mx-auto text-center gap-6">
+                  <p class="font-bold text-lg">Morsekodeoversetter</p>
+                  <div class="flex flex-col md:flex-row gap-3">
+                    <a href="../kommer-snart.htm" class="link link-hover text-sm">Om oss</a>
+                    <a href="../kommer-snart.htm" class="link link-hover text-sm">Personvernerklæring</a>
+                    <a href="../kommer-snart.htm" class="link link-hover text-sm">Bruksvilkår</a>
+                  </div>
+                </div>
+                <div class="flex flex-col text-right text-xs opacity-75">© 2024</div>
+              </div>
+            </div>
+          </footer>
+      </div>
+      <dialog id="settings-modal" class="modal">
+        <div class="modal-box relative max-w-3xl">
+          <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Innstillinger</h2>
+            <form method="dialog">
+              <button class="btn btn-sm btn-circle btn-ghost">✕</button>
+            </form>
+          </div>
+          <div class="divider"></div>
+          <div class="form-control mt-4">
+            <label class="label cursor-pointer gap-2">
+              <span class="label-text text-lg font-semibold">Mørk modus</span>
+              <input id="dark-mode" type="checkbox" class="checkbox checkbox-primary">
+            </label>
+          </div>
+          <div class="divider"></div>
+          <div class="gap-4 mt-4">
+            <form method="dialog">
+              <button id="settings-close" class="btn btn-outline btn-error w-full">Lukk</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <div class="drawer-side z-40">
+        <label aria-label="Toggle menu" for="drawer" class="drawer-overlay"></label>
+        <aside class="bg-base-200 w-auto h-screen overflow-y-scroll">
+          <ul class="menu menu-compact">
+            <li class="hover-bordered">
+              <a href="../index.htm" class="flex gap-2 ">
+                <span class="flex-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current stroke-15 fill-none" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.1 2.18a9.93 9.93 0 0 1 3.8 0"></path>
+                    <path d="M17.6 3.71a9.95 9.95 0 0 1 2.69 2.7"></path>
+                    <path d="M21.82 10.1a9.93 9.93 0 0 1 0 3.8"></path>
+                    <path d="M20.29 17.6a9.95 9.95 0 0 1-2.7 2.69"></path>
+                    <path d="M13.9 21.82a9.94 9.94 0 0 1-3.8 0"></path>
+                    <path d="M6.4 20.29a9.95 9.95 0 0 1-2.69-2.7"></path>
+                    <path d="M2.18 13.9a9.93 9.93 0 0 1 0-3.8"></path>
+                    <path d="M3.71 6.4a9.95 9.95 0 0 1 2.7-2.69"></path>
+                    <circle cx="12" cy="12" r="1"></circle>
+                  </svg>
+                </span>
+                <span class="flex-1">Morse-kodeoversetter</span>
+              </a>
+            </li>
+            <li class="hover-bordered">
+  <a href="../morse-code-alphabet/index.htm" class="flex gap-2 ">
+    <span class="flex-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current stroke-15 fill-none" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+        <path d="m8 13 4-7 4 7"></path>
+        <path d="M9.1 11h5.7"></path>
+      </svg>
+    </span>
+    <span class="flex-1">Morse-kodealfabet</span>
+  </a>
+</li>
+</li>
+<li class="hover-bordered">
+  <a href="..\words\sos-in-morse-code\index.htm" class="flex gap-2 ">
+    <span class="flex-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current stroke-15 fill-none" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="m4.93 4.93 4.24 4.24"></path>
+        <path d="m14.83 9.17 4.24-4.24"></path>
+        <path d="m14.83 14.83 4.24 4.24"></path>
+        <path d="m9.17 14.83-4.24 4.24"></path>
+        <circle cx="12" cy="12" r="4"></circle>
+      </svg>
+    </span>
+    <span class="flex-1">SOS på morse</span>
+  </a>
+</li>
+</ul>
+<ul class="menu menu-compact">
+  <li></li>
+  <li class="menu-title">
+    <span class="text-base">Morse-kodesymboler</span>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="../learn-morse-code/index.htm">Lær morse</a>
+  </li>
+    <!--
+  <li class="hover-bordered">
+    <a class="" href="../letters/index.htm">Bokstaver i morse</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="../numbers/index.htm">Tall i morse</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="../words/index.htm">Ord i morse</a>
+  </li>
+  -->
+</ul>
+<ul class="menu menu-compact">
+  <li></li>
+  <li class="menu-title">
+    <span class="text-base">Morse-kodeoversettere</span>
+  </li>
+  <!--
+  <li class="hover-bordered">
+    <a class="" href="american-morse-code-translator/index.htm">Amerikansk morse-kodeoversetter</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="binary-to-morse-code-translator/index.htm">Binær til morse-kodeoversetter</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="international-morse-code-translator/index.htm">Internasjonal morse-kodeoversetter</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="morse-code-light-translator/index.htm">Morse-kode lysoversetter</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="morse-code-to-binary-translator/index.htm">Morse-kode til binæroversetter</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="nato-phonetic-alphabet-translator/index.htm">NATO alfabetoversetter</a>
+  </li>
+  -->
+          </ul>
+        </aside>
+      </div>
+    </div>
+    <script src="../assets/js/alphabet.js?id=fb9b7773657fa6601f67fbf9be0e4efd"></script>
+  </body>
+</html>

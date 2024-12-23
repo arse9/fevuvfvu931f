@@ -1,0 +1,473 @@
+﻿<!DOCTYPE html>
+<html data-theme="dark" dir="ltr" lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morseoversetter</title>
+    <meta name="description" content="Enkel å bruke morseoversetter. Oversett morsekode til tekst og tekst til morsekode uten problemer.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Morsekode Oversetter - Morse Dekoder">
+    <meta name="twitter:description" content="Enkel å bruke morseoversetter. Oversett morsekode til tekst og tekst til morsekode uten problemer.">
+    <meta name="twitter:url" content="https://morsekode.vercel.app/">
+    <meta name="twitter:image" content="https://morsekode.vercel.app/assets/icons/android-chrome-512x512.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="no-NO">
+    <meta property="og:url" content="https://morsekode.vercel.app/">
+    <meta property="og:title" content="Morsekode Oversetter - Morse Dekoder">
+    <meta property="og:description" content="Enkel å bruke morseoversetter. Oversett morsekode til tekst og tekst til morsekode uten problemer.">
+    <meta property="og:image" content="https://morsekode.vercel.app/assets/icons/android-chrome-512x512.png">
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/icons/site.webmanifest">
+    <link rel="stylesheet" href="assets/css/main.css?id=2f21e916404eb9d36d42f7497016d37d">
+    <link rel="canonical" href="index.htm">
+    <link rel="alternate" hreflang="x-default" href="index.htm">
+    <link rel="alternate" hreflang="da" href="da/index.htm">
+    <link rel="alternate" hreflang="de" href="de/index.htm">
+    <link rel="alternate" hreflang="en" href="index.htm">
+    <script async="" data-cfasync="false" src="adengine/morsekode.vercel.app/loader.js" type="text/javascript"></script>
+  </head>
+  <body data-locale="no-NO" class="bg-base-100" tabindex="-1">
+    <div class="drawer">
+      <input aria-label="Toggle menu" id="drawer" type="checkbox" class="drawer-toggle">
+      <div class="drawer-content">
+        <nav class="navbar w-full border-b border-base-content/10">
+          <div class="navbar-start">
+            <label aria-label="Open menu" for="drawer" class="btn btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-5 w-5 stroke-current stroke-15 fill-none">
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+              <span class="hidden md:block text-xs">MENY</span>
+            </label>
+            <div class="dropdown z-40 hidden sm:inline-block">
+              <label tabindex="0" class="btn btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-4 w-4 md:h-5 md:w-5 stroke-15 stroke-current fill-none">
+                  <path d="m5 8 6 6"></path>
+                  <path d="m4 14 6-6 2-3"></path>
+                  <path d="M2 5h12"></path>
+                  <path d="M7 2h1"></path>
+                  <path d="m22 22-5-10-5 10"></path>
+                  <path d="M14 18h6"></path>
+                </svg>
+                <span class="hidden md:block text-xs">NO</span>
+              </label>
+              <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 flex-nowrap rounded-box w-48 max-h-72 overflow-y-scroll">
+                <li>
+                  <a class="" href="">
+                    <span class="badge badge-sm badge-outline font-mono font-semibold tracking-wide opacity-80">EN</span>
+                    <span class="text-xs">Coming Soon</span>
+                  </a>
+                </li>
+                <!--
+                <li><a class="" href="da/index.htm"><span class="badge badge-sm badge-outline font-mono font-semibold tracking-wide opacity-80">DA</span><span class="text-xs">Dansk</span></a></li><li><a class="" href="de/index.htm"><span class="badge badge-sm badge-outline font-mono font-semibold tracking-wide opacity-80">DE</span><span class="text-xs">Deutsch</span></a></li><li><a class="active" href="index.htm"><span class="badge badge-sm badge-outline font-mono font-semibold tracking-wide opacity-80">EN</span><span class="text-xs">English</span></a></li><a class="" href="fi/index.htm"><span class="badge badge-sm badge-outline font-mono font-semibold tracking-wide opacity-80">FI</span><span class="text-xs">Suomi</span></a></li>
+                -->
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center">
+            <h1 class="font-bold normal-case text-lg sm:text-3xl max-w-[66vw] sm:max-w-full truncate">Morse-kodeoversetter</h1>
+          </div>
+          <div class="navbar-end">
+            <label title="Settings" id="settings-open" class="btn btn-ghost modal-button">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current stroke-15 fill-none" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span class="hidden md:block text-xs">INNSTILLINGER</span>
+            </label>
+          </div>
+        </nav>
+        <main class="w-full flex" id="main">
+          <div class="mx-auto text-center min-w-[160px] xxl:min-w-[300px] max-h-[600px] hidden lg:block">
+            <div id="adngin-sidebar_left-0"></div>
+          </div>
+          <div class="w-full max-w-3xl mx-auto p-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="form-control">
+                <div class="flex justify-between bg-base-300 rounded-t-lg items-center px-4 py-2">
+                  <div class="flex justify-center items-center gap-4">
+                    <div class="label-text font-semibold text-base truncate">Tekst</div>
+                    <div class="tooltip cursor-pointer clipboard" data-tip="Click to Copy" data-copied="Copied!" data-clipboard-target="#input">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-4 w-4 stroke-15 stroke-current fill-none">
+                        <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="tooltip cursor-pointer play-audio" id="play-input" aria-label="Play the Audio" data-tip="Play the Audio">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-4 w-4 stroke-15 stroke-current fill-none">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                      </svg>
+                    </div>
+                    <div class="tooltip cursor-pointer stop-audio hidden" id="stop-input" aria-label="Stop the Audio" data-tip="Stop the Audio">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-4 w-4 stroke-15 stroke-current fill-none">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <line x1="22" x2="16" y1="9" y2="15"></line>
+                        <line x1="16" x2="22" y1="9" y2="15"></line>
+                      </svg>
+                    </div>
+                    <div id="clear-input" class="clear-element tooltip cursor-pointer" aria-label="Clear" data-tip="Clear" data-cleared="Cleared!" data-target="#input">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-4 w-4 stroke-15 stroke-current fill-none">
+                        <path d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21"></path>
+                        <path d="M22 21H7"></path>
+                        <path d="m5 11 9 9"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <textarea id="input" class="textarea textarea-md textarea-bordered w-full border-base-content/10 focus:outline-none focus:ring-0 focus:ring-offset-0 rounded-none" rows="5"></textarea>
+                <div id="input-count" class="flex justify-between bg-base-300 rounded-b-lg items-center px-4 py-2">
+                  <div class="text-xs">
+                    <span id="input-word-count" data-default="0" class="word-count clear-target">0</span> ord
+                  </div>
+                  <div class="text-xs">
+                    <span id="input-character-count" data-default="0" class="character-count clear-target">0</span> karakterer
+                  </div>
+                </div>
+              </div>
+              <div class="form-control">
+                <div class="flex justify-between bg-base-300 rounded-t-lg items-center px-4 py-2">
+                  <div class="flex justify-center items-center gap-4">
+                    <div class="label-text font-semibold text-base truncate">Morsekode</div>
+                    <div class="tooltip cursor-pointer clipboard" data-tip="Click to Copy" data-copied="Copied!" data-clipboard-target="#output">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-4 w-4 stroke-15 stroke-current fill-none">
+                        <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="tooltip cursor-pointer play-morse" id="play-output" aria-label="Play the Audio" data-tip="Play the Audio">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-4 w-4 stroke-15 stroke-current fill-none">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                      </svg>
+                    </div>
+                    <div class="tooltip cursor-pointer stop-morse hidden" id="stop-output" aria-label="Stop the Audio" data-tip="Stop the Audio">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-4 w-4 stroke-15 stroke-current fill-none">
+                        <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                        <line x1="22" x2="16" y1="9" y2="15"></line>
+                        <line x1="16" x2="22" y1="9" y2="15"></line>
+                      </svg>
+                    </div>
+                    <div id="download-output" class="tooltip cursor-pointer download-output" aria-label="Download" data-tip="Download" data-target="#output">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" class="h-4 w-4 stroke-15 stroke-current fill-none">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" x2="12" y1="15" y2="3"></line>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <textarea id="output" class="textarea textarea-md textarea-bordered w-full border-base-content/10 focus:outline-none focus:ring-0 focus:ring-offset-0 rounded-none" rows="5"></textarea>
+                <div id="output-count" class="flex justify-between bg-base-300 rounded-b-lg items-center px-4 py-2">
+                  <div class="text-xs">
+                    <span data-default="0 sekunder" data-seconds="sekunder" data-minutes="minutter" id="output-time-count" class="time-count clear-target">0 sekunder</span>
+                  </div>
+                  <div class="text-xs">
+                    <span id="output-character-count" data-default="0" class="character-count clear-target">0</span> karakterer
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full block mt-10 mx-auto text-center min-h-[100px]">
+              <div id="adngin-incontent_1-0"></div>
+            </div>
+            <div class="flex justify-center my-10" id="content">
+              <article class="prose max-w-full">
+                <h2>Hva er Morse-kodeoversetteren?</h2>
+                <p>Morse-kodeoversetteren lar alle oversette tekst til Morse-kode eller konvertere Morse-kode til tekst.</p>
+                <p>For å bruke Morse-kodeoversetteren, skriv inn tekst i tekstinndataboksen for å konvertere den til Morse-kode, eller skriv inn Morse-kode i utdata-boksen for å begynne å dekode den.</p>
+                <p>
+                  <strong>Merk:</strong> Morse-kodeoversetteren konverterer engelsk tekst til <a href="kommer-snart.htm">internasjonal Morse-kode</a>, ikke <a href="kommer-snart.htm">amerikansk Morse-kode</a>. Du kan sjekke <a href="assets/morse-code-chart.pdf">Morse-kode-diagrammet PDF</a> vi har laget, som viser hvordan hvert tegn er representert.
+                </p>
+                <h2>Slik bruker du Morse-kodeoversetteren</h2>
+                <p>Følg trinnene nedenfor for å begynne å oversette Morse-kode til tekst og vice versa. Hvis du trenger å endre noen alternativer, klikker du på tannhjulikonet øverst til høyre. Derfra kan du justere avanserte alternativer som frekvens, WPM (ord per minutt), prikk eller strek-tegn, og tegnet som brukes for mellomrom (skråstrek som standard). Hvis du vil oppleve Morse-kode visuelt med blinkende lys i stedet, sjekk <a href="kommer-snart.htm">Morse-kode lysoversetteren</a>. </p>
+                <h3>Oversett tekst til Morse-kode</h3>
+                <ul>
+                  <li>Skriv teksten din i <strong>Tekst</strong>-boksen. </li>
+                  <li>Morse-kodeoversettelsen vises automatisk i <strong>Morse-kode</strong>-boksen. Hvis et tegn ikke kan oversettes, vises et "#" på plass. </li>
+                  <li>Klikk på lydikonet for å høre teksten din oversatt til Morse-kode-pip.</li>
+                  <li>Klikk på utklippstavle-ikonet for å kopiere Morse-koden og lime den inn et annet sted.</li>
+                  <li>Klikk på nedlastingsikonet for å laste ned Morse-kode-lyden.</li>
+                </ul>
+                <h3>Oversett Morse-kode til tekst</h3>
+                <ul>
+                  <li>Skriv inn eller lim inn Morse-koden i <strong>Morse-kode</strong>-boksen, eller skriv inn en Morse-kode-sekvens manuelt. </li>
+                  <li>Oversettelsen av Morse-koden vises automatisk i <strong>Tekst</strong>-boksen. </li>
+                  <li>Klikk på lydikonet for å høre Morse-koden spilt høyt.</li>
+                  <li>Klikk på utklippstavle-ikonet for å kopiere oversettelsen.</li>
+                  <li>Klikk på viskelær-ikonet for å tømme tekst og Morse-kode.</li>
+                </ul>
+                <h2>Hva kan Morse-kodeoversetteren brukes til?</h2>
+                <p>Alle kan bruke Morse-kode-generatoren til utdannings-, profesjonelle- eller fritidsformål. Du kan bruke verktøyet til å:</p>
+                <ul>
+                  <li>Lære Morse-kode og øve på <a href="morse-code-alphabet/index.htm">Morse-kode-alfabetet</a>. </li>
+                  <li>Forstå vanlige ord, setninger og bokstaver brukt i internasjonal Morse-kode, f.eks. <a href="words/sos-in-morse-code/index.htm">SOS-signal</a>. </li>
+                  <li>Lag hemmelige meldinger som kan sendes til venner på nettet, f.eks. på WhatsApp eller Instagram.</li>
+                  <li>Dekode påskeegg i spill eller filmer som kan være på Morse-kode.</li>
+                </ul>
+                <p>For eksempel, husker du Nokia SMS-tonen? Skriv inn følgende tegn <code>... -- ...</code> i <strong>Morse-kode</strong>-boksen for å se hva det betyr på engelsk. Deretter klikker du på lydikonet for å høre hvordan det høres ut. </p>
+                <p>Ikke glem at du alltid kan bruke Morse-kodeoversetteren som en Morse-kode-dekoder for å oppdage andre skjulte meldinger i Morse-kode.</p>
+                <h2>Slik lærer du Morse-kode</h2>
+                <p>Siden Samuel Morse og hans assistent Alfred Vail utviklet Morse-kode, har det ofte virket vanskelig å lære det. Det er imidlertid ikke så vanskelig som det kan se ut. Selv om Morse-kode først og fremst er kjent for sin bruk i militær- og nødsituasjonskommunikasjon, var det den første vidt brukte metoden for å sende meldinger gjennom elektriske signaler. I dag lærer mange mennesker Morse-kode bare for moro skyld eller for å sende en hemmelig melding til vennene sine.</p>
+                <p>Hvis du er en av de som også ønsker å <a href="learn-morse-code/index.htm">lære Morse-kode</a>, kan du enkelt begynne med å studere Morse-alfabetet. Deretter, som når man lærer et annet språk, er det veldig hjelpsomt å lytte til Morse-kode-lyd. Til slutt kan det være til stor hjelp å alltid ha en Morse-oversetter som denne for å konvertere tekst til Morse-kode. </p>
+                <p>Og selvfølgelig, hvis det å lære Morse-kode ikke er noe for deg, kan du alltid bruke Morse-kodeoversetteren for å oversette engelsk til prikker og streker.</p>
+              </article>
+            </div>
+            <div class="image-container">
+              <figure class="image">
+                <noscript class="loading-lazy">
+                  <img class="object-contain" width="2560" height="2016" loading="lazy" src="assets/morse-code.jpg" alt="Morse Code">
+                </noscript>
+              </figure>
+            </div>
+          </div>
+          <div class="mx-auto text-center min-w-[160px] xxl:min-w-[300px] max-h-[600px] hidden lg:block">
+            <div id="adngin-sidebar_right-0"></div>
+          </div>
+        </main>
+        <footer class="footer bg-base-300 text-base-content border-t border-base-content/30">
+          <div class="w-full max-w-3xl mx-auto p-6">
+            <div class="w-full flex flex-col md:flex-row gap-6 justify-between items-center">
+              <div class="flex flex-col">
+                <div class="flex flex-row gap-4">
+                  <a href="https://www.youtube.com/@Vervl?sub_confirmation=1" class="hover:text-[#FF0000] transition-colors" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                      <title>YouTube</title>
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                    </svg>
+                  </a>
+                  <a href="https://x.com/" class="hover:text-base-content/80 transition-colors" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                      <title>X</title>
+                      <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col justify-center mx-auto text-center gap-6">
+                <p class="font-bold text-lg">Morsekodeoversetter</p>
+                <div class="flex flex-col md:flex-row gap-3">
+                  <a href="kommer-snart.htm" class="link link-hover text-sm">Om oss</a>
+                  <a href="kommer-snart.htm" class="link link-hover text-sm">Personvernerklæring</a>
+                  <a href="kommer-snart.htm" class="link link-hover text-sm">Bruksvilkår</a>
+                </div>
+              </div>
+              <div class="flex flex-col text-right text-xs opacity-75">© 2024</div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <dialog id="settings-modal" class="modal">
+        <div class="modal-box relative max-w-3xl">
+          <div class="flex justify-between items-center">
+            <h2 class="text-2xl font-bold">Innstillinger</h2>
+            <form method="dialog">
+              <button class="btn btn-sm btn-circle btn-ghost">✕</button>
+            </form>
+          </div>
+          <div class="divider"></div>
+          <div class="form-control mt-4">
+            <label class="label cursor-pointer gap-2">
+              <span class="label-text text-lg font-semibold">Mørk modus</span>
+              <input id="dark-mode" type="checkbox" class="checkbox checkbox-primary">
+            </label>
+          </div>
+          <div class="divider"></div>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 my-4">
+            <div class="form-control w-full">
+              <label for="dot" class="label">
+                <span class="label-text font-semibold text-base">Prikk</span>
+              </label>
+              <input type="index" value="." id="dot" class="input input-bordered w-full">
+            </div>
+            <div class="form-control w-full">
+              <label for="dash" class="label">
+                <span class="label-text font-semibold text-base">Strek</span>
+              </label>
+              <input type="index" value="-" id="dash" class="input input-bordered w-full">
+            </div>
+            <div class="form-control w-full">
+              <label for="space" class="label">
+                <span class="label-text font-semibold text-base">Mellomrom</span>
+              </label>
+              <input type="index" value="/" id="space" class="input input-bordered w-full">
+            </div>
+            <div class="form-control w-full">
+              <label for="separator" class="label">
+                <span class="label-text font-semibold text-base">Separator</span>
+              </label>
+              <input type="index" value=" " id="separator" class="input input-bordered w-full">
+            </div>
+            <div class="form-control w-full">
+              <label for="wpm" class="label">
+                <span class="label-text font-semibold text-base">WPM</span>
+              </label>
+              <input type="number" value="20" id="wpm" class="input input-bordered w-full">
+            </div>
+            <div class="form-control w-full">
+              <label for="frequency" class="label">
+                <span class="label-text font-semibold text-base">Frekvens (Hz)</span>
+              </label>
+              <input type="number" value="600" id="frequency" class="input input-bordered w-full">
+            </div>
+            <div class="form-control w-full ">
+              <label for="type" class="label">
+                <span class="label-text font-semibold text-base">Bølgeform</span>
+              </label>
+              <select id="type" class="select select-bordered">
+                <option value="sawtooth">Sagtenn</option>
+                <option selected="" value="sine">Sinus</option>
+                <option value="square">Firkant</option>
+                <option value="triangle">Trekant</option>
+              </select>
+            </div>
+            <div class="form-control w-full ">
+              <label for="alphabet" class="label">
+                <span class="label-text font-semibold text-base">Alfabet</span>
+              </label>
+              <select id="alphabet" class="select select-bordered">
+                <option selected="" value="1">Latinsk</option>
+                <option value="5">Kyrillisk</option>
+                <option value="6">Gresk</option>
+                <option value="7">Hebraisk</option>               
+              </select>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="gap-4 mt-4">
+            <form method="dialog">
+              <button id="settings-close" class="btn btn-outline btn-error w-full">Lukk</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+      <div class="drawer-side z-40">
+        <label aria-label="Toggle menu" for="drawer" class="drawer-overlay"></label>
+        <aside class="bg-base-200 w-auto h-screen overflow-y-scroll">
+          <ul class="menu menu-compact">
+            <li class="hover-bordered">
+              <a href="index.htm" class="flex gap-2 active">
+                <span class="flex-none">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current stroke-15 fill-none" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10.1 2.18a9.93 9.93 0 0 1 3.8 0"></path>
+                    <path d="M17.6 3.71a9.95 9.95 0 0 1 2.69 2.7"></path>
+                    <path d="M21.82 10.1a9.93 9.93 0 0 1 0 3.8"></path>
+                    <path d="M20.29 17.6a9.95 9.95 0 0 1-2.7 2.69"></path>
+                    <path d="M13.9 21.82a9.94 9.94 0 0 1-3.8 0"></path>
+                    <path d="M6.4 20.29a9.95 9.95 0 0 1-2.69-2.7"></path>
+                    <path d="M2.18 13.9a9.93 9.93 0 0 1 0-3.8"></path>
+                    <path d="M3.71 6.4a9.95 9.95 0 0 1 2.7-2.69"></path>
+                    <circle cx="12" cy="12" r="1"></circle>
+                  </svg>
+                </span>
+                <span class="flex-1">Morse-kodeoversetter</span>
+</a>
+</li>
+<li class="hover-bordered">
+  <a href="morse-code-alphabet/index.htm" class="flex gap-2 ">
+    <span class="flex-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current stroke-15 fill-none" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
+        <path d="m8 13 4-7 4 7"></path>
+        <path d="M9.1 11h5.7"></path>
+      </svg>
+    </span>
+    <span class="flex-1">Morse-kodealfabet</span>
+  </a>
+</li>
+</li>
+<li class="hover-bordered">
+  <a href="words/sos-in-morse-code/index.htm" class="flex gap-2 ">
+    <span class="flex-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 stroke-current stroke-15 fill-none" viewbox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="m4.93 4.93 4.24 4.24"></path>
+        <path d="m14.83 9.17 4.24-4.24"></path>
+        <path d="m14.83 14.83 4.24 4.24"></path>
+        <path d="m9.17 14.83-4.24 4.24"></path>
+        <circle cx="12" cy="12" r="4"></circle>
+      </svg>
+    </span>
+    <span class="flex-1">SOS på morse</span>
+  </a>
+</li>
+</ul>
+<ul class="menu menu-compact">
+  <li></li>
+  <li class="menu-title">
+    <span class="text-base">Morse-kodesymboler</span>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="learn-morse-code/index.htm">Lær morse</a>
+  </li>
+  <!--
+  <li class="hover-bordered">
+    <a class="" href="../letters/index.htm">Bokstaver i morse</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="../numbers/index.htm">Tall i morse</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="../words/index.htm">Ord i morse</a>
+  </li>
+  -->
+</ul>
+<ul class="menu menu-compact">
+  <li></li>
+  <li class="menu-title">
+    <span class="text-base">Morse-kodeoversettere</span>
+  </li>
+  <!--
+  <li class="hover-bordered">
+    <a class="" href="american-morse-code-translator/index.htm">Amerikansk morse-kodeoversetter</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="binary-to-morse-code-translator/index.htm">Binær til morse-kodeoversetter</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="international-morse-code-translator/index.htm">Internasjonal morse-kodeoversetter</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="morse-code-light-translator/index.htm">Morse-kode lysoversetter</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="morse-code-to-binary-translator/index.htm">Morse-kode til binæroversetter</a>
+  </li>
+  <li class="hover-bordered">
+    <a class="" href="nato-phonetic-alphabet-translator/index.htm">NATO alfabetoversetter</a>
+  </li>
+-->
+
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+    <script src="assets/js/index.js?id=1424619ea6d2d0f96d0057f3f57aaf23"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Morse Code Translator",
+        "url": "https://morsekode.vercel.app",
+        "logo": "https://morsekode.vercel.app/assets/icons/android-chrome-512x512.png",
+        "foundingDate": "2017",
+        "founders": [{
+          "@type": "Person",
+          "name": "Burak Özdemir",
+          "sameAs": ["https://github.com/ozdemirburak", "https://www.linkedin.com/in/ozdemirburak", "https://twitter.com/ozdemirdev"]
+        }]
+      }
+    </script>
+  </body>
+</html>
